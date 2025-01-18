@@ -97,6 +97,51 @@ li > a{
 }
 
 
+.gallary{
+    margin: 1rem 12.18rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card{
+    padding: 0.93rem;
+    box-shadow: 0  0.125rem 0.315rem  rgba(80, 77, 77, 0.89) ;
+}
+
+
+
+
+.star{
+    width: 1rem;
+}
+
+.card-title{
+    font-weight: 500;
+    font-size: 1.75rem;
+    color: rgba(24, 25, 31, 1);
+}
+.card-subtitle{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.card-star{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(94, 99, 102, 1);
+}
+
+.card-description{
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgba(120, 120, 133, 1);
+}
+
+
 
 
 @media screen and (max-width :576px) {
@@ -110,7 +155,15 @@ li > a{
         flex-direction: column-reverse;
     }
 
+    .gallary{
+        grid-template-columns: 1fr;
+    }
+
 }
+
+
+
+
 
 @media screen and (max-width : 992px) and (min-width :576px) {
     
@@ -122,6 +175,8 @@ li > a{
     .banner{
         flex-direction: column-reverse;
     }
-
+.gallary{
+    grid-template-columns: 1fr;
+}
 
 }
